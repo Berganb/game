@@ -3,11 +3,12 @@ void setup(){
   size(1000, 500);
 }
 
-//foreground();
+//run is commented out for the moment
 
 void draw(){
   background(250, 250, 250);
   grid();
-  //foreground();
+  foreground();
+  //dinosaur();
   endGame();
 }
