@@ -50,11 +50,12 @@ public class Character{
     
     
   }
-  int level(){
+  void level(){
     int lev = 1;
     if(x == 1000){
     lev +=1;}
-    return( lev);
+    //textSize();
+    //text(lev);
     
    
   }

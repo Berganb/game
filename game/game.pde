@@ -2,7 +2,8 @@
 
 
 Character c=new Character(200, 200);
- Enemies e=new Enemies();
+ Enemies e1=new Enemies(random(260, 640), random(60, 300), 100, 100);
+ Enemies e2=new Enemies(random(130, 340), random(60, 300), 100, 100);
  PImage p,p2;
 
 void setup() {
@@ -19,10 +20,13 @@ void setup() {
 }
 void draw(){
   background(255);
-  grid();
+  //grid();
   run1();
+ e1.display();
+ e2.display();
   c.display();
-  e.display();
+
+  
   endGame();
   //Character.level();
 }
@@ -34,4 +38,11 @@ void keyPressed(){
   if( keyCode==DOWN)
         c.sety(c.gety()+25);
 }
+}
+
+void checkCollision(){
+  if(e1.getX()+e1.getW()<enemy coords)
+  
+  print(something);
+  
 }

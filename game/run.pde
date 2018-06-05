@@ -1,7 +1,7 @@
 
 boolean run1(){
   boolean run;
-  run = false;
+  run = true;
   // neeed to implement the charecter and enemies positions onto this
   //if( Character.gety() == enemies.getw())
 //if(z[0] == e[0]){
