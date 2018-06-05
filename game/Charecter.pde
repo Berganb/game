@@ -36,7 +36,7 @@ public class Character{
     fill(35,139,34);
     rect(x, y, 60, 40);
     rect(x, y, 40,90);
-    
+    if(run1()!= false){
     x=x+8;
     if(x==1000){
       x=0;}
@@ -44,7 +44,7 @@ public class Character{
       y=0;}
     if(y<0){
       y=360;
-    }
+    }}
      // r=r*2;
     
     
@@ -54,7 +54,7 @@ public class Character{
     int lev = 1;
     if(x == 1000){
     lev +=1;}
-    return lev;
+    return( lev);
     
    
   }

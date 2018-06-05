@@ -14,7 +14,7 @@ void setup() {
   //size(640,360);
   stroke(255);
   frameRate(30); 
-  //
+  
   
 }
 void draw(){
@@ -24,13 +24,14 @@ void draw(){
   c.display();
   e.display();
   endGame();
-  // put int text for in top right corner Character.level();
+  //Character.level();
 }
 
 void keyPressed(){
+  if(run1() == true){
   if ( keyCode==UP)
         c.sety(c.gety()-25);
   if( keyCode==DOWN)
         c.sety(c.gety()+25);
-  
+}
 }

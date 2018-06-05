@@ -8,7 +8,8 @@ void endGame(){
   textSize(35);
   fill(0, 126, 255, 102);
   text("RETRY?", 500, 300);
+  //if ( keyCode=='y'){
+   //(boolean run1() == true);
   
-  }
+  }}
   
-}
