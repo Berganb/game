@@ -1,5 +1,6 @@
 public class Character{
-  private int x;
+  
+  public int x;
   private int y;
    int r=0;
    int b=0;
@@ -7,6 +8,7 @@ public class Character{
   public Character(int x, int y){
     this.x=x;
     this.y=y;
+    
   }
   
  void sety(int y1){
@@ -15,7 +17,9 @@ public class Character{
   int gety(){
     return y;
   }
-  
+  int getx(){
+    return x;
+  }
   
   
   
@@ -35,23 +39,21 @@ public class Character{
     fill(35,139,34);
     rect(x, y, 60, 40);
     rect(x, y, 40,90);
-    
-    x=x+8;
-    if(x==640){
+    if(run1()!= false){
+    x=x+4;
+    if(x==1000){
       x=0;}
     if(y>360){
       y=0;}
     if(y<0){
       y=360;
     }
+ 
+  }
      // r=r*2;
     
     
-    
+    }
   }
+ 
   
-  
-  
-  
-
-}
