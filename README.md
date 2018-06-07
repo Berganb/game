@@ -11,26 +11,28 @@ The toughest part was creating the hit collison detectors, which took multiple d
 ### Most interesting piece of your code and explanation for what it does.
 
 ```Java
-void keyPressed() {
-  if (keyCode == LEFT) {
-    tree= tree.getLeft();
-    System.out.println(tree.getValue());
-    String s=(String)tree.getValue();
-    fill(155);
-    textSize(50);
-  } else if (keyCode == RIGHT) {
-    tree = tree.getRight();
-    System.out.println(tree.getValue());
-    String s=(String)tree.getValue();
-    fill(155);
-    textSize(50);
-  } else if (tree.getLeft()==null&&tree.getRight()==null) {
-    System.out.println(tree.getValue());
-    tree=t.returnTree();
-  }
+public boolean run1(){
+   boolean run;
+  run = true;
+  if(c.getx() > e1.getX()- (e1.getW()/2) && c.getx()<  e1.getX() + (e1.getW()/2)){
+  if( c.gety()< e1.getY() + (e1.getH()/2) && c.gety()> e1.getY() - (e1.getH()/2) ){
+run = false;
+return false;
+  }}
+   if(c.getx() > e2.getX()- (e2.getW()/2) && c.getx()< e2.getX() + (e2.getW()/2)){
+  if( c.gety()< e2.getY() + (e2.getH()/2) && c.gety()> e2.getY() - (e2.getH()/2) ){
+run = false;
+return false;
+  }}
+else{
+return true;
+
+
+}
+return run;
 }
 ```
-This is the code that moves down the tree as decisions are made.  It gets each value from both left and right and also casts the value to a String.  If the progressions arrives at the leaf nodes, those values are printed.
+This code is what most prgrams in thecode run off of. All of endgame runs off of this code and is what stops the Character from moving after the game ends bothe vertically and horizontally. The code here is what detects if a collision occursand will return false if there is a colison, making the other programs stop. Most things tht need to be implemented still will need to run on this and would reset settings ifwe were to get the endGame to restart and have a start screen.
 ## Built With
 
 * [Processing](https://processing.org/) - The IDE used
