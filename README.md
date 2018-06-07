@@ -2,11 +2,11 @@
 Owen and my game.
 # Project Title and purpose
 
-One Paragraph of project description goes here
+In this game the player is a dinosaur which moves across the screen an attempts to avoid still images of Chris Pratt's character from Jurassic Park. If the character hits one of the images, then a pop up screen will pop up( although it wont do anytning). The Dinosaur is controlled with the up and down arrow keys on the keyboard.
 
 ### Difficulties or opportunities you encountered along the way.
 
-The toughest part was...
+The toughest part was creating the hit collison detectors, which took multiple days for us to figuire out until we asked a more intellegent human being for assistance.
 
 ### Most interesting piece of your code and explanation for what it does.
 
@@ -37,11 +37,12 @@ This is the code that moves down the tree as decisions are made.  It gets each v
 
 ## Authors
 
-* **Billie Thompson** 
+Owen Benson
+Alec Berg
 
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
+* Danny Cox helped us out alot
 * Inspiration
 * etc
