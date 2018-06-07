@@ -1,5 +1,5 @@
 # game
-Owen and my game.
+Owen and my (Alec) game.
 # Project Title and purpose
 
 In this game the player is a dinosaur which moves across the screen an attempts to avoid still images of Chris Pratt's character from Jurassic Park. If the character hits one of the images, then a pop up screen will pop up( although it wont do anytning). The Dinosaur is controlled with the up and down arrow keys on the keyboard.
